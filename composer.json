@@ -1,0 +1,22 @@
+{
+    "description": "Random wallpapers for the Neos login screen",
+    "type": "neos-package",
+    "name": "neos/wallpapers",
+    "require": {
+        "neos/neos": "~7.0 || dev-master",
+        "neos/flow": "*"
+    },
+    "license": [
+        "GPL-3.0-or-later"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Neos\\Wallpapers\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Neos.Wallpapers"
+        }
+    }
+}

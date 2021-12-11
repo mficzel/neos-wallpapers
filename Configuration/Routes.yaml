@@ -1,0 +1,11 @@
+##
+# Wallpaper
+
+-
+  name:  'Wallpaper'
+  uriPattern: 'neos/randomwallpaper'
+  defaults:
+    '@package':    'Neos.Wallpapers'
+    '@controller': 'Wallpaper'
+    '@action':     'randomWallpaper'
+  httpMethods: ['GET']

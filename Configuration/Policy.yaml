@@ -1,0 +1,15 @@
+#                                                                        #
+# Security policy for the Neos Wallpapers package                        #
+#                                                                        #
+
+privilegeTargets:
+  'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+    'Neos.Wallpapers:Wallpaper':
+      matcher: 'method(Neos\Wallpapers\Controller\WallpaperController->randomWallpaperAction())'
+
+roles:
+  'Neos.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: 'Neos.Wallpapers:Wallpaper'
+        permission: GRANT

@@ -1,0 +1,25 @@
+Neos:
+  Wallpapers:
+
+    #
+    # The fallback source is used when the configured sources below do not yield
+    # any jpg files. By default the Wallpaper of Neos is used as default.
+    #
+    fallbackSource: 'resource://Neos.Neos/Public/Images/Login/Wallpaper.jpg'
+
+    #
+    # The sources are folders that are expected to contain jpg files all folders are
+    # scanned recursively for jpg files of wich one is picked randomly to which the
+    # wallpaper image request is forwarded.
+    #
+    sources:
+      neos_wallpapers: 'resource://Neos.Wallpapers/Public/Images/Neos_Wallpapers'
+
+  Neos:
+    userInterface:
+      backendLoginForm:
+        backgroundImage: '/neos/randomwallpaper'
+  Flow:
+    mvc:
+      routes:
+        Neos.Wallpapers: true

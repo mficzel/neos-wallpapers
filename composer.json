@@ -3,7 +3,7 @@
     "type": "neos-package",
     "name": "neos/wallpapers",
     "require": {
-        "neos/neos": "~7.0 || dev-master",
+        "neos/neos": "~7.0 || ~8.0 || dev-master",
         "neos/flow": "*"
     },
     "license": [
